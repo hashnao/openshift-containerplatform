@@ -36,8 +36,9 @@
 		},
 		"masterVmSize": {
 			"type": "string",
-			"defaultValue": "Standard_DS1_v2",
+			"defaultValue": "Standard_A0",
 			"allowedValues": [
+                                "Standard_A0",
 				"Standard_A4", "Standard_A5", "Standard_A6", "Standard_A7", "Standard_A8", "Standard_A9", "Standard_A10", "Standard_A11",
 				"Standard_D2", "Standard_D3", "Standard_D4",
 				"Standard_D11", "Standard_D12", "Standard_D13", "Standard_D14",
@@ -56,8 +57,9 @@
 		},
 		"nodeVmSize": {
 			"type": "string",
-			"defaultValue": "Standard_DS1_v2",
+			"defaultValue": "Standard_A0",
 			"allowedValues": [
+                                "Standard_A0",
 				"Standard_A4", "Standard_A5", "Standard_A6", "Standard_A7", "Standard_A8", "Standard_A9", "Standard_A10", "Standard_A11",
 				"Standard_D2", "Standard_D3", "Standard_D4",
 				"Standard_D11", "Standard_D12", "Standard_D13", "Standard_D14",
@@ -76,8 +78,9 @@
 		},
 		"infraVmSize": {
 			"type": "string",
-			"defaultValue": "Standard_DS1_v2",
+			"defaultValue": "Standard_A0",
 			"allowedValues": [
+                                "Standard_A0",
 				"Standard_A4", "Standard_A5", "Standard_A6", "Standard_A7", "Standard_A8", "Standard_A9", "Standard_A10", "Standard_A11",
 				"Standard_D2", "Standard_D3", "Standard_D4",
 				"Standard_D11", "Standard_D12", "Standard_D13", "Standard_D14",
@@ -300,6 +303,9 @@
 		"basicDeploymentTemplateUrl": "[concat(parameters('_artifactsLocation'), 'nested/', parameters('customVhdOrGallery'), 'basic.json')]",
 		"openshiftDeploymentTemplateUrl": "[concat(parameters('_artifactsLocation'), 'nested/openshiftdeploy.json')]",
 		"vmSizesMap": {
+			"Standard_A0": {
+				"storageAccountType": "Standard_LRS"
+			},
 			"Standard_A4": {
 				"storageAccountType": "Standard_LRS"
 			},
