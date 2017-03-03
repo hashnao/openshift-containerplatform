@@ -140,9 +140,9 @@
 		},
 		"infraInstanceCount": {
 			"type": "int",
-			"defaultValue": 1,
-			"minValue": 1,
-			"allowedValues": [1, 2, 3],
+			"defaultValue": 0,
+			"minValue": 0,
+			"allowedValues": [0, 1, 2, 3],
 			"metadata": {
 				"description": "Number of OpenShift infra nodes.  1 is non HA.  Choose 2 or 3 for HA"
 			}

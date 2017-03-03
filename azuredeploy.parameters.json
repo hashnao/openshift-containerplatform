@@ -15,13 +15,13 @@
 			"value": "changeme"
 		},
 		"masterVmSize": {
-			"value": "Standard_DS1_v2"
+			"value": "Standard_A0"
 		},
 		"nodeVmSize": {
-			"value": "Standard_DS1_v2"
+			"value": "Standard_A0"
 		},
 		"infraVmSize": {
-			"value": "Standard_DS1_v2"
+			"value": "Standard_A0"
 		},
 		"openshiftClusterPrefix": {
 			"value": "changeme"
@@ -55,18 +55,6 @@
 		},
 		"enableLogging": {
 			"value": "true"
-		},
-		"rhsmUsernamePasswordOrActivationKey": {
-			"value": "password"
-		},
-		"rhsmUsernameOrOrgId": {
-			"value": "changeme"
-		},
-		"rhsmPasswordOrActivationKey": {
-			"value": "changeme"
-		},
-		"rhsmPoolId": {
-			"value": "changeme"
 		},
 		"sshPublicKey": {
 			"value": "GEN-SSH-PUB-KEY"
