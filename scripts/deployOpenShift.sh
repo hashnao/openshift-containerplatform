@@ -1,4 +1,5 @@
 #!/bin/bash
+exit 0
 
 echo $(date) " - Starting Script"
 
