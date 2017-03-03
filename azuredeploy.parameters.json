@@ -3,7 +3,7 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"_artifactsLocation": {
-			"value": "https://raw.githubusercontent.com/haroldwongms/openshift-containerplatform/master/"
+			"value": "https://raw.githubusercontent.com/hashnao/openshift-containerplatform/master/"
 		},
 		"customVhdOrGallery": {
 			"value": "gallery"
@@ -15,13 +15,13 @@
 			"value": "changeme"
 		},
 		"masterVmSize": {
-			"value": "Standard_DS2_v2"
+			"value": "Standard_DS1_v2"
 		},
 		"nodeVmSize": {
-			"value": "Standard_DS2_v2"
+			"value": "Standard_DS1_v2"
 		},
 		"infraVmSize": {
-			"value": "Standard_DS2_v2"
+			"value": "Standard_DS1_v2"
 		},
 		"openshiftClusterPrefix": {
 			"value": "changeme"
