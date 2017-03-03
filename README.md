@@ -4,7 +4,7 @@ This template deploys OpenShift Container Platform with basic username / passwor
 
 |Resource           	|Properties                                                                                                                          |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------|
-|Virtual Network   		|**Address prefix:** 10.0.0.0/8<br />**Master subnet:** 10.1.0.0/16<br />**Node subnet:** 10.2.0.0/16                      |
+|Virtual Network   		|**Address prefix:** 192.168.0.0/16<br />**Master subnet:** 192.168.1.0/24<br />**Node subnet:** 192.168.2.0/24                      |
 |Master Load Balancer	|2 probes and 2 rules for TCP 8443 and TCP 9090 <br/> NAT rules for SSH on Ports 2200-220X                                           |
 |Infra Load Balancer	|3 probes and 3 rules for TCP 80, TCP 443 and TCP 9090 									                                             |
 |Public IP Addresses	|Bastion Public IP for Bastion Node<br />OpenShift Master public IP attached Master Load Balancer<br />OpenShift Router public IP attached to Infra Load Balancer            |
@@ -93,8 +93,8 @@ You will also need to get the Pool ID that contains your entitlements for OpenSh
 ## Deploy Template
 
 Deploy to Azure using Azure Portal: 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fharoldwongms%2Fopenshift-containerplatform%2Fmaster%2Fazuredeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fharoldwongms%2Fopenshift-containerplatform%2Fmaster%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhashnao%2Fopenshift-containerplatform%2Fmaster%2Fazuredeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fhashnao%2Fopenshift-containerplatform%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a><br/>
 
